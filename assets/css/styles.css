@@ -343,8 +343,22 @@ img {
     margin: 0 auto;
   }
 }
-
-/* For large devices */
-
-
 /* For taller devices */
+@media screen and (max-width: 1150px) and (min-height: 800px) {
+  .home__content{
+    align-content: center;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1150px) and (min-height: 800px){
+  .home__article{
+    padding-top: 7rem;
+  }
+  .home__info{
+    padding-bottom: 3rem;
+  }
+  .home__social{
+    bottom: 4.5rem;
+  }
+}
