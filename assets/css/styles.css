@@ -425,3 +425,38 @@ img {
     bottom: -8rem;
   }
 }
+/* Fix alignment for tall devices like Galaxy S24 Ultra */
+@media screen and (min-height: 850px) and (max-width: 550px) {
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center vertically */
+    align-items: center;     /* center horizontally */
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .home__titles {
+    margin-bottom: 1rem; /* space between title and car */
+    text-align: center;
+  }
+
+  .home__img {
+    position: relative;
+    bottom: 0; /* reset old offset */
+    transform: none; /* remove shift */
+    margin-bottom: 1rem;
+    max-width: 380px; /* keep proportions */
+    height: auto;
+  }
+
+  .home__specs {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .home__specs span {
+    font-size: 0.9rem; /* optional tweak for tall display */
+  }
+}
