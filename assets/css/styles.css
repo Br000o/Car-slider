@@ -460,3 +460,170 @@ img {
     font-size: 0.9rem; /* optional tweak for tall display */
   }
 }
+/* ASUS VivoBook 14 Specific - 1920x1080 14-inch display */
+@media screen and (min-width: 1151px) and (max-width: 1920px) {
+  .container {
+    margin-inline: auto;
+    max-width: 1120px;
+  }
+  
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+  
+  .nav__menu {
+    width: 40%;
+    padding: 10rem 4rem 0;
+  }
+  
+  .nav__list {
+    row-gap: 4rem;
+  }
+  
+  .nav__close {
+    top: 1.7rem;
+  }
+  
+  .home__panel-1 {
+    width: 35%;
+    height: 100%;
+  }
+  
+  .home__panel-2 {
+    width: 65%;
+    height: 100%;
+    left: initial;
+    right: 0;
+  }
+  
+  .home__article {
+    padding: 4rem;
+  }
+  
+  .home__content {
+    display: block;
+    height: 100%;
+    align-content: space-between;
+  }
+  
+  .home__data {
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .home__titles {
+    width: max-content;
+    margin-inline: 0;
+    position: absolute;
+    top: 35%;
+    left: 2rem;
+    transform: translateY(-50%);
+  }
+  
+  .home__subtitle {
+    font-size: 3rem;
+    transform: translateY(0.5rem);
+  }
+  
+  .home__title {
+    font-size: 7.5rem;
+    line-height: 0.9;
+  }
+  
+  .home__img {
+    width: 480px;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .home__info {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    column-gap: 3rem;
+    text-align: left;
+    padding-bottom: 0;
+  }
+  
+  .home__specs {
+    justify-content: flex-start;
+    column-gap: 1.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .home__button {
+    justify-self: start;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .home__interaction {
+    max-width: 1120px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+  
+  .home__social {
+    top: initial;
+    bottom: 2.5rem;
+    left: 1.5rem;
+    row-gap: 0.8rem;
+  }
+  
+  .home__social-border {
+    height: 220px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home__social-link {
+    font-size: 1.2rem;
+  }
+  
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: initial;
+    height: max-content;
+    left: initial;
+    right: 2.5rem;
+    top: 45%;
+    bottom: initial;
+    transform: translateY(-50%);
+    flex-direction: column;
+    row-gap: 1.2rem;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.85rem;
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+/* Height adjustments for laptop sizes */
+@media screen and (min-width: 1151px) and (max-width: 1550px) and (min-height: 750px) {
+  .home__content {
+    align-content: center;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1550px) and (min-height: 900px) {
+  .home__article {
+    padding-top: 5rem;
+  }
+  
+  .home__info {
+    padding-bottom: 2rem;
+  }
+  
+  .home__social {
+    bottom: 4rem;
+  }
+}
